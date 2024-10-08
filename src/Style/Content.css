@@ -4,3 +4,83 @@
     background-color: black;
     border-top: 1px solid grey;
 }
+
+.mainContentDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forPhotoDiv {
+    height: 80%;
+    width: 50%;
+    float: left;
+    background-color: white;
+}
+
+.forPhotoDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.forDescription {
+    height: 80%;
+    width: 50%;
+    float: left;
+    overflow: auto;
+    color: white;
+    padding: 0 20px;
+}
+
+.forDescription::-webkit-scrollbar {
+    background-color: black;
+}
+
+.btnToDone {
+    height: 6%;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s ease 0.2s;
+}
+
+.btnToDone:hover {
+    background-color: rgb(129, 216, 129);
+}
+
+@media only screen and (max-width: 600px) {
+    .mainContentDiv {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .forPhotoDiv {
+        height: 100%;
+        width: 100%;
+        float: left;
+        background-color: white;
+    }
+
+    .forDescription {
+        height: 100%;
+        width: 80%;
+        float: left;
+        text-align: center;
+        overflow: auto;
+        color: white;
+        padding: 0 20px;
+    }
+
+    .btnToDone {
+        height: 10%;
+        background-color: rgb(200, 200, 200);
+        margin-bottom: 20px;
+        color: Black;
+    }
+}
