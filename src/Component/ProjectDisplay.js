@@ -5,27 +5,27 @@ function ProjectDisplay() {
     const projectOBJ = [
         {
             id: "1",
-            Label: "Weather Forecast",
+            Label: "WEATHER FORECAST",
             Description: "Weather Forecast Application developed using React JS"
         },
         {
             id: "2",
-            Label: "Movie Finder",
+            Label: "MOVIE FINDER",
             Description: "Movie Finder Application developed using React JS"
         },
         {
             id: "3",
-            Label: "Employee Management System",
+            Label: "EMPLOYEE MANAGEMENT SYSTEM",
             Description: "Employee Management System developed using React JS, Node JS, MongoDB"
         },
         {
             id: "4",
-            Label: "E-commerce Website",
+            Label: "E-COMMERCE WEBSITE",
             Description: "E-commerce website developed using React JS"
         },
         {
             id: "5",
-            Label: "Clone Websites",
+            Label: "CLONE WEBSITES",
             Description: "Recreated the frontends of several high-profile websites using HTML and CSS, Like Amazon, Netflix Login Page, Instagram Login Page, Facebook Login Page, etc"
         },
     ]
@@ -64,7 +64,7 @@ function ProjectDisplay() {
                             <div class="card__content">
                                 <div className='heading_Space'>
                                     {
-                                        <h4>{project.Label}</h4>
+                                        <h5>{project.Label}</h5>
                                     }
                                 </div>
                                 <div className='description_space'>

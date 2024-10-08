@@ -61,6 +61,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid black;
+}
+.heading_Space h5{
+    color: rgb(232, 232, 232);
 }
 
 .description_space {

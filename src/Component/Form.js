@@ -3,8 +3,10 @@ import '../Style/Form.css';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import Loader from './Loader';
 
-function Form() {
+function Form({ setIsLoading }) {
+
     const {
         register,
         handleSubmit,
@@ -19,34 +21,40 @@ function Form() {
         formData.append("message", data.Message);
 
         try {
+            setIsLoading(true);  // Start loader
             const response = await axios.post("https://api.web3forms.com/submit", formData);
-            if (response.data.success) {
-                Swal.fire({
-                    title: "Done",
-                    text: "Your message is successfully delivered ",
-                    icon: "success",
-                    showCancelButton: true,
-                    confirmButtonColor: "#3085d6",
-                    cancelButtonColor: "#d33",
-                    confirmButtonText: "Download Resume"
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire({
-                            title: "THANK YOU",
-                            text: "Resume is downloading",
-                            icon: "success"
-                        });
-                        
-                    }
-                });
 
+            if (response.data.success) {
+                setTimeout(() => {
+                    setIsLoading(false);  // Stop loader
+                    Swal.fire({
+                        title: "Done",
+                        text: "Your message is successfully delivered",
+                        icon: "success",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "Download Resume"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            Swal.fire({
+                                title: "THANK YOU",
+                                text: "Resume is downloading",
+                                icon: "success"
+                            });
+                        }
+                    });
+                }, 2000);  // 2 seconds delay before proceeding
             } else {
-                console.log("Error occurred");
+                console.error("Error occurred");
+                setIsLoading(false);  // Stop loader if there's an error
             }
         } catch (error) {
             console.error("Submission error:", error);
+            setIsLoading(false);  // Stop loader on error
         }
     }
+
 
     return (
         <div className='formDiv'>
