@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.553a4a42.css",
+    "main.js": "/Portfolio/static/js/main.16580616.js",
+    "static/media/298a28c5_x1d-ii-sample-01-web.jpg": "/Portfolio/static/media/6cb604081ef3086569319ddb5adcae66298a28c5_x1d-ii-sample-01-web.670578cecc2bbc63af79.jpg",
+    "static/media/—Pngtree—cartoon disabled man saying hello_5568699.png": "/Portfolio/static/media/—Pngtree—cartoon disabled man saying hello_5568699.41b93ed78539b433c312.png",
+    "index.html": "/Portfolio/index.html",
+    "main.553a4a42.css.map": "/Portfolio/static/css/main.553a4a42.css.map",
+    "main.16580616.js.map": "/Portfolio/static/js/main.16580616.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.553a4a42.css",
+    "static/js/main.16580616.js"
+  ]
+}
