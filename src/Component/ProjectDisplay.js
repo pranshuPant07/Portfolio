@@ -30,18 +30,18 @@ function ProjectDisplay() {
         },
     ]
 
-    function handleRedirectClick(e){
+    function handleRedirectClick(e) {
         const projectID = e.target.getAttribute("btn-clck-Attr");
-        if(projectID === "1"){
-            alert("Weather Forecast Application")
-        } else if(projectID === "2"){
-            alert("Movie Finder Application")
-        } else if(projectID === "3"){
-            window.open('https://github.com/pranshuPant07/FRONTEND-EMS.git', "_blank")
-        } else if(projectID === "4"){
-            alert("E-commerce Website")
-        } else if(projectID === "5"){
-            alert("Clone Websites")
+        if (projectID === "1") {
+            window.open('https://github.com/pranshuPant07/Weather-Forecast.git', "_blank")
+        } else if (projectID === "2") {
+            window.open("https://github.com/pranshuPant07/Movie-Finder.git", "_blank")
+        } else if (projectID === "3") {
+            window.open('https://github.com/pranshuPant07/Employee-Management-System.git', "_blank")
+        } else if (projectID === "4") {
+            window.open('https://github.com/pranshuPant07/E-Commerce-website.git', "_blank")
+        } else if (projectID === "5") {
+            window.open('https://github.com/pranshuPant07/Clone-Websites.git', "_blank")
         }
     }
     return (
