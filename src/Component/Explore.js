@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useRef } from 'react';
 import '../Style/Explore.css';
 import img2 from '../Images/—Pngtree—cartoon disabled man saying hello_5568699.png'
