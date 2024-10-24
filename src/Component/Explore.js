@@ -25,7 +25,7 @@ function Explore() {
                     <h4 ref={el => headingRefs.current[2] = el} style={{ opacity: 0, transform: 'translateX(-100%)', transition: 'opacity 0.5s ease, transform 0.5s ease' }}>I'm a Frontend Developer</h4>
 
                     <div ref={el => headingRefs.current[3] = el} style={{ opacity: 0, transform: 'translateX(-100%)', transition: 'opacity 0.5s ease, transform 0.5s ease' }} className='PhotoPlace'>
-                        <img className='imgFor' src={img2}/>
+                        <img className='imgFor' src={img2} />
                     </div>
                 </div>
                 <div className='Button-Explore'>
